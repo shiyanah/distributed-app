@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distributed Notes App</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      div {
+        margin-bottom: 20px;
+      }
+      .note {
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin: 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Distributed Notes App</h1>
+
+    <input
+      id="username"
+      placeholder="Nama Kamu / Laptop 1"
+      style="margin-bottom: 10px"
+    />
+
+    <div>
+      <h2>Strong Notes</h2>
+      <input id="strongInput" placeholder="Tulis catatan" />
+      <button onclick="writeStrong()">Write</button>
+      <button onclick="readStrong()">Read</button>
+      <div id="strongOutput"></div>
+    </div>
+
+    <div>
+      <h2>Weak Notes</h2>
+      <input id="weakInput" placeholder="Tulis catatan" />
+      <button onclick="writeWeak()">Write</button>
+      <button onclick="readWeak()">Read</button>
+      <div id="weakOutput"></div>
+    </div>
+
+    <div>
+      <h2>Eventual Notes</h2>
+      <input id="eventualInput" placeholder="Tulis catatan" />
+      <button onclick="writeEventual()">Write</button>
+      <button onclick="readEventual()">Read</button>
+      <div id="eventualOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
